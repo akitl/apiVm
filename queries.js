@@ -93,7 +93,7 @@ function removeVm(req, res, next) {
 
 
 module.exports = {
-  getAllPuppies: getAllPuppies,
+  getAllVms: getAllVms,
   getSingleVm: getSingleVm,
   createVm: createVm,
   updateVm: updateVm,
