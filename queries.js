@@ -11,7 +11,7 @@ var db = pgp(connectionString);
 
 function getAllVms(req, res, next) {
   console.log("test");
-  db.any('select * from pups')
+ /* db.any('select * from pups')
     .then(function (data) {
       res.status(200)
         .json({
@@ -22,7 +22,7 @@ function getAllVms(req, res, next) {
     })
     .catch(function (err) {
       return next(err);
-    });
+    }); */
 }
 
 function getSingleVm(req, res, next) {
