@@ -10,19 +10,19 @@ var connectionString = process.env.DATABASE_URL;
 var db = pgp(connectionString);
 
 function getAllVms(req, res, next) {
-  console.log("test");
- /* db.any('select * from pups')
+
+  db.any('select * from vms')
     .then(function (data) {
       res.status(200)
         .json({
           status: 'success',
           data: data,
-          message: 'Retrieved ALL puppies'
+          message: 'Retrieved ALL vm'
         });
     })
     .catch(function (err) {
       return next(err);
-    }); */
+    }); 
 }
 
 function getSingleVm(req, res, next) {
